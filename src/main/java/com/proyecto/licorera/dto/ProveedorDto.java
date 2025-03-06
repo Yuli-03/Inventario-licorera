@@ -47,4 +47,14 @@ public class ProveedorDto {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public ProveedorDto() {}
+
+    public ProveedorDto(Long idProveedor, String nombre, String direccion, String telefono, String email) {
+        this.idProveedor = idProveedor;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.email = email;
+    }
 }
