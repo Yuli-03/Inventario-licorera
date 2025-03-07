@@ -20,4 +20,11 @@ public class CategoriaDto {
     public void setNombreCategoria(String nombreCategoria) {
         this.nombreCategoria = nombreCategoria;
     }
+
+    public CategoriaDto() {}
+
+    public CategoriaDto(Long idCategoria, String nombreCategoria) {
+        this.idCategoria = idCategoria;
+        this.nombreCategoria = nombreCategoria;
+    }
 }

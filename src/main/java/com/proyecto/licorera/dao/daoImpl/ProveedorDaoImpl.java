@@ -30,7 +30,7 @@ public class ProveedorDaoImpl implements ProveedorDao {
 
     private static final String SQL_CREATE_PROVEEDOR ="INSERT INTO proveedores (id_proveedor, nombre, direccion, telefono, email) VALUES (?,?,?,?,?)";
 
-    private static final String SQL_DELETE_CLIENTE = "DELETE FROM proveedores a WHERE id_proveedor = ?";
+    private static final String SQL_DELETE_PROVEEDOR = "DELETE FROM proveedores a WHERE id_proveedor = ?";
 
     private static final String SQL_UPDATE_PROVEEDOR = "UPDATE proveedores a SET nombre = ?, direccion = ?, telefono = ?, email = ? WHERE id_proveedor = ?";
 
@@ -69,7 +69,7 @@ public class ProveedorDaoImpl implements ProveedorDao {
 
     @Override
     public void deleteProveedor(Long idProveedor) {
-        jdbcTemplate.update(SQL_DELETE_CLIENTE, idProveedor);
+        jdbcTemplate.update(SQL_DELETE_PROVEEDOR, idProveedor);
     }
 
     @Override
